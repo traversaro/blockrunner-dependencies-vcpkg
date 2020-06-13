@@ -65,6 +65,7 @@ jobs:
       run: |
         git clone https://github.com/traversaro/drake-lite-cmake
         cd drake-lite-cmake
+        git checkout ${drake_lite_cmake_TAG}
         mkdir build
         cd build
         cmake -T "ClangCl" -DCMAKE_INSTALL_PREFIX=/c/blockrunner-deps/vcpkg/installed/x64-windows ..
