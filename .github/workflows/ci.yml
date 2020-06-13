@@ -67,7 +67,7 @@ jobs:
         cd drake-lite-cmake
         mkdir build
         cd build
-        cmake -T "ClangCl" -DCMAKE_INSTALL_PREFIX=C:\blockrunner-deps\vcpkg\installed\x64-windows ..
+        cmake -T "ClangCl" -DCMAKE_INSTALL_PREFIX=/c/blockrunner-deps/vcpkg/installed/x64-windows ..
         cmake --build . --target ALL_BUILD --config Debug
         cmake --build . --target INSTALL --config Debug
         cmake --build . --target ALL_BUILD --config Release
