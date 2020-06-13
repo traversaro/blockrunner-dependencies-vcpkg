@@ -69,8 +69,6 @@ jobs:
         mkdir build
         cd build
         cmake -T "ClangCl" -DCMAKE_INSTALL_PREFIX=/c/blockrunner-deps/vcpkg/installed/x64-windows ..
-        cmake --build . --target ALL_BUILD --config Debug
-        cmake --build . --target INSTALL --config Debug
         cmake --build . --target ALL_BUILD --config Release
         cmake --build . --target INSTALL --config Release
         cd ..
